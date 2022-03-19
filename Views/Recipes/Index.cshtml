@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
+<br>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create Recipe", "Create", null, new { @class = "btn btn-primary" })
 </p>
 <table class="table">
     <tr>
@@ -17,7 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.RecipeDescription)
         </th>
-        <th></th>
+        <th>
+           
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -29,9 +31,9 @@
             @Html.DisplayFor(modelItem => item.RecipeDescription)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }, new { @class = "btn btn-primary btnStyle" }) 
+            @Html.ActionLink("Details", "Details", new { id=item.Id }, new { @class = "btn btn-success btnStyle" }) 
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { @class = "btn btn-danger btnStyle" })
         </td>
     </tr>
 }
