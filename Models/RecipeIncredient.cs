@@ -11,16 +11,16 @@ namespace RecipeApp.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Recipe Incredient name is required")]
-        public string RecipeIncredientName { get; set; }
+       // [Required(ErrorMessage = "Recipe Incredient name is required")]
+        //public string RecipeIncredientName { get; set; }
 
         [Required(ErrorMessage = "Incredient amount is required")]
         public string AmountRequired { get; set; }
         public Recipe Recipe { get; set; }
 
-        public int RecipeId { get; set; }
+       public int RecipeId { get; set; }
         public Incredient Incredient { get; set; }
-        public int IncredientId { get; set; }
+       public int IncredientId { get; set; }
 
 
     }

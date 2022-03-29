@@ -127,13 +127,25 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IncredientsController.cs" />
+    <Compile Include="Controllers\RecipeIncredientsController.cs" />
     <Compile Include="Controllers\RecipesController.cs" />
+    <Compile Include="Controllers\RecipeStepsController.cs" />
+    <Compile Include="DbContextOptions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202203161816079_RecipeTables.cs" />
     <Compile Include="Migrations\202203161816079_RecipeTables.designer.cs">
       <DependentUpon>202203161816079_RecipeTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203261615501_recipe.cs" />
+    <Compile Include="Migrations\202203261615501_recipe.Designer.cs">
+      <DependentUpon>202203261615501_recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203261621539_recipes.cs" />
+    <Compile Include="Migrations\202203261621539_recipes.Designer.cs">
+      <DependentUpon>202203261621539_recipes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Incredient.cs" />
@@ -185,6 +197,21 @@
     <Content Include="Views\Recipes\Details.cshtml" />
     <Content Include="Views\Recipes\Edit.cshtml" />
     <Content Include="Views\Recipes\Index.cshtml" />
+    <Content Include="Views\Incredients\Create.cshtml" />
+    <Content Include="Views\Incredients\Delete.cshtml" />
+    <Content Include="Views\Incredients\Details.cshtml" />
+    <Content Include="Views\Incredients\Edit.cshtml" />
+    <Content Include="Views\Incredients\Index.cshtml" />
+    <Content Include="Views\RecipeIncredients\Create.cshtml" />
+    <Content Include="Views\RecipeIncredients\Delete.cshtml" />
+    <Content Include="Views\RecipeIncredients\Details.cshtml" />
+    <Content Include="Views\RecipeIncredients\Edit.cshtml" />
+    <Content Include="Views\RecipeIncredients\Index.cshtml" />
+    <Content Include="Views\RecipeSteps\Create.cshtml" />
+    <Content Include="Views\RecipeSteps\Delete.cshtml" />
+    <Content Include="Views\RecipeSteps\Details.cshtml" />
+    <Content Include="Views\RecipeSteps\Edit.cshtml" />
+    <Content Include="Views\RecipeSteps\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -205,6 +232,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202203161816079_RecipeTables.resx">
       <DependentUpon>202203161816079_RecipeTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203261615501_recipe.resx">
+      <DependentUpon>202203261615501_recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203261621539_recipes.resx">
+      <DependentUpon>202203261621539_recipes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

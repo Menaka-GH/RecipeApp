@@ -1,0 +1,25 @@
+﻿@model RecipeApp.Models.Incredient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Incredient Details</h2>
+
+<div>
+    
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IncredientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncredientName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IncredientId }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-primary" })
+</p>
