@@ -1,5 +1,5 @@
-﻿												RECIPEAPP
-											    *********
+﻿RECIPEAPP
+*********
 	RecipeApp is a list of recipes from South Indian category.  I have created the following classes.
 	1. Recipe class -Includes the name of the recipes and short description
 	2. Incredients Class  -  Includes name of the incredients
