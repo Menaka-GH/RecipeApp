@@ -16,7 +16,7 @@
 	1. Four classes created namely Recipe, Incredients, RecipeIncredients, RecipeSteps
 	2. Objects created for the RecipeContext to do the operations CRUD.
 	3. LINQ query used to select the record from the database.
-	4. Migrations have been used by the below commands:
+	4. Using Entity Framework, Migrations have been used by the below commands:
 		add-migrations "recipe"
 		update-database
 	
