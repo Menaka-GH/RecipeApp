@@ -30,6 +30,8 @@ namespace RecipeApp.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             RecipeIncredient recipeIncredient = db.Recipeincredients.Find(id);
+            ViewBag.IncredientId = new SelectList(db.Incredients, "IncredientId", "IncredientName", recipeIncredient.IncredientId);
+            ViewBag.RecipeId = new SelectList(db.Recipes, "Id", "RecipeName");
             if (recipeIncredient == null)
             {
                 return HttpNotFound();

@@ -13,10 +13,11 @@ namespace RecipeApp
         
         public DbSet<Recipe> Recipes { get; set; }
 
-            public DbSet<RecipeIncredient> Recipeincredients { get; set; }
-            public DbSet<RecipeStep> Recipesteps { get; set; }
+        public DbSet<RecipeIncredient> Recipeincredients { get; set; }
 
-            public DbSet<Incredient> Incredients { get; set; }
+        public DbSet<RecipeStep> Recipesteps { get; set; }
+
+        public DbSet<Incredient> Incredients { get; set; }
         
 
     }

@@ -10,9 +10,15 @@
     <h4>RecipeIncredient</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Incredient.IncredientName)
-        </dt>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Incredient.IncredientName, "IncredientName", htmlAttributes: new { @class = "control-label col-md-2" })
+
+            @Html.DropDownList("IncredientId", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.IncredientId, "", new { @class = "text-danger" })
+
+        </div>
+
 
         <dd>
             @Html.DisplayFor(model => model.Incredient.IncredientName)
@@ -22,11 +28,18 @@
             @Html.DisplayNameFor(model => model.Recipe.RecipeName)
         </dt>
 
+        <div class="form-group">
+           
+            @Html.DropDownList("RecipeId", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.RecipeId, "", new { @class = "text-danger" })
+
+        </div>
+
         <dd>
             @Html.DisplayFor(model => model.Recipe.RecipeName)
         </dd>
 
-        
+
 
         <dt>
             @Html.DisplayNameFor(model => model.AmountRequired)
